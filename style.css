@@ -18,10 +18,18 @@
     background-color: #2d5bdaf3;
   }
 
+  nav a{
+    text-decoration: none;
+  }
+
   header nav>a{
-    margin: 16px;
+    margin-right: 16px;
     color:rgb(231, 221, 208);
     text-decoration: none;
+  
+  }
+  header nav>a:last-child{
+    margin-right: revert;
   
   }
   header nav>a:hover{
@@ -29,6 +37,9 @@
     font-weight: bold;
     
   }
+  /* nav a:visited{
+    color: rgb(87, 98, 156);
+  } */
 
   footer{
     padding: 8px;
@@ -116,4 +127,69 @@
 
   #contact-me{
     margin-top:16px;
+  }
+
+  .mobile-nav, 
+  section.menu {
+    display:none;
+  }
+
+
+  @media (width<500px) {
+    .default-nav{
+      display:none;
+    }
+    .mobile-nav {
+      display:revert;
+    }
+    #menu-button{
+      display:block;
+      background: transparent;
+      border-radius: 8px;
+      margin-left: auto;
+    }
+    section.menu{
+      display:revert;
+      height:0;
+      width: 100%;
+      overflow:hidden;
+      position:fixed;
+      top:0;
+      Z-index:1;
+      background-color:#2d5bdaf3 ;
+    }
+    section.menu nav{
+      margin-top: 48px;
+    }
+    section.menu ul{
+      list-style: none;
+    }
+    section.menu ul>li{
+      /* padding-bottom: 8px; */
+      margin-bottom: 8px;
+    }
+    section.menu ul>li>a{
+      margin-right: 16px;
+     
+      color:rgb(231, 221, 208);
+    }
+    #close-menu{
+      background: transparent;
+      border-radius: 25%;
+      position: absolute;
+      right:16px;
+      top:16px;
+      font-size: x-large;
+      border: none;
+      
+    }
+  }
+
+  @media(width<=450px){
+    #profile-image{
+      /* height: 250px; */
+    /* width: 250px; */
+    /* border-radius: 16px; */
+    width:100%;
+    }
   }

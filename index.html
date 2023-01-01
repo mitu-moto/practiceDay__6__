@@ -8,13 +8,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <section class="menu">
+      <button id="close-menu">&times;</button>
+      <nav>
+        <ul>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#qualifications">Qualifications</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#technologies">Technologies</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
     <header>
-        <nav>
+        <nav class="default-nav">
             <a href="#about-me">About</a>
             <a href="#qualifications">Qualifications</a>
             <a href="#hobbies">Hobbies</a>
             <a href="#technologies">Technologies</a>
             <a href="#contact-me">Contact</a>
+        </nav>
+        <!-- nav for mobile  -->
+        <nav class="mobile-nav">
+          <button id="menu-button">Menu</button>
         </nav>
     </header>
         <main class="container">
@@ -132,5 +148,6 @@
         </footer>
     
     <script src="main.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>
