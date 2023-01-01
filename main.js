@@ -1,5 +1,6 @@
 const dynamicContent = document.getElementById("dynamic-text");
 console.log(dynamicContent)
+// console.log(dynamicContent)
 
 const phrases = ["Software Engineer...", "Front End Developer ...", "UI/UX designer..."]
 let pharseIndex = 0;
