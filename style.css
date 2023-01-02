@@ -25,6 +25,7 @@
   header nav>a{
     margin-right: 16px;
     color:rgb(231, 221, 208);
+    color:rgb(253, 145, 3);
     text-decoration: none;
   
   }
@@ -113,7 +114,8 @@
     display: block;
     font-weight: 600;
   }
-  #contact input:focus, #contact textarea:focus{
+  #contact input:focus, 
+  #contact textarea:focus{
     outline: 2px solid rgb(150, 251, 0);
     border: 2px;
   }
@@ -157,6 +159,7 @@
       top:0;
       Z-index:1;
       background-color:#2d5bdaf3 ;
+      transition: height 0.7s;
     }
     section.menu nav{
       margin-top: 48px;
