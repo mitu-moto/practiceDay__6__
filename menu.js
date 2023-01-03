@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded",function(){
     function showMenu(){
         const menu = document.querySelector("section.menu");
-        menu.style.height = "200px";
+        menu.style.height = "250px";
+        menu.style.width = "100%";
         
     }
     
