@@ -1,5 +1,5 @@
 const dynamicContent = document.getElementById("dynamic-text");
-console.log(dynamicContent)
+// console.log(dynamicContent)
 // console.log(dynamicContent)
 
 const phrases = ["Software Engineer...", "Front End Developer ...", "UI/UX designer..."]
@@ -35,7 +35,7 @@ function clearLetters() {
             updatedPhrase += phrases[pharseIndex].charAt(index);
 
         }
-        console.log(updatedPhrase);
+        // console.log(updatedPhrase);
         dynamicContent.textContent = updatedPhrase;
         letterIndex -= 1;
         setTimeout(clearLetters, erasingSpeed)
@@ -43,3 +43,24 @@ function clearLetters() {
 }
 
 printLetters(phrases[pharseIndex])
+
+// window.addEventListener("scroll", function(e){
+//     // console.log(this.window.scrollY)
+//     let intro = this.document.querySelector(".intro");
+//     if(this.window.scrollY >=(intro.offsetHeight + intro.offsetTop)){
+//         this.document.querySelector(".header").style.position = "sticky";
+//     }else{
+//         this.document.querySelector(".header").style.position = "revert";
+//     }
+// })
+
+window.addEventListener("scroll", function () {
+    console.log(this.window.scrollY)
+    let intro = this.document.querySelector(".intro");
+    if (this.window.scrollY >= (intro.offsetHeight + intro.offsetTop)) {
+        this.document.querySelector(".header").style.position = "sticky";
+    } else {
+        this.document.querySelector(".header").style.position = "revert";
+
+    }
+})

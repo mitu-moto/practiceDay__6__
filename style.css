@@ -31,14 +31,23 @@
 
   header{
     padding: 16px;
-    position: sticky;
     /* position: sticky; */
+    position: static;
     top:0;
     background-color: #2d5bdaf3;
     z-index: 2;
     border: 1px solid;
   }
-
+  
+.h{
+  padding: 16px;
+  /* position: sticky; */
+  position: static;
+  top:0;
+  background-color: #2d5bdaf3;
+  z-index: 2;
+  border: 1px solid;
+}
 .coco{
   z-index: 1;
 }
